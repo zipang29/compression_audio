@@ -1,0 +1,3 @@
+FFT => découpage en sous bande (échantillonage) => masquage + quantification + RLE + écrire dans le fichier
+
+1 : problématique : compression du son avec perte
