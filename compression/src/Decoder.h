@@ -13,14 +13,16 @@ class Decoder : public QObject
     public:
         Decoder(QString file);
         void start();
+        void constructFile();
 
     public slots:
         void readNextBuffer();
+        void traitementTermine();
 
     private:
         QAudioDecoder * d;
         QVector<fftw_complex *> fft;
-        QVector<double *> ifft;
+        QVector<fftw_complex *> ifft;
 };
 
 #endif

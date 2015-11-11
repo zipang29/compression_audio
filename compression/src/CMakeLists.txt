@@ -15,11 +15,13 @@ set(SOURCES
     main.cpp
     FFT.cpp
     Decoder.cpp
+    WavPcmFile.cpp
 )
 
 set(HEADERS
     FFT.h
     Decoder.h
+    WavPcmFile.h
 )
 
 add_executable(compression ${SOURCES} ${HEADERS})
